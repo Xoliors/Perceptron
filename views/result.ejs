@@ -1,0 +1,17 @@
+<!-- result.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resultado</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <h1>Resultado</h1>
+  <% if (animal !== 'Desconocido') { %>
+    <h2>El animal identificado es: <%= animal %></h2>
+    <img src="<%= imagePath %>" alt="<%= animal %>">
+  <% } else { %>
+    <h2>No se pudo identificar el animal.</h2>
+  <% } %>
+</body>
+</html>
